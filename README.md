@@ -1,2 +1,2 @@
 # Restaurant-Page
-A sample restaurant storefront page using webpack
+A simple restaurant storefront page using webpack
