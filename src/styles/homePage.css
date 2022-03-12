@@ -1,7 +1,15 @@
-#background-home {
-    display: flex;
+:root {
+    --header-color: #1F2937;
+    --section1-color: #2a384b;
+}
+
+body {
     margin: 0;
     padding: 0;
+}
+
+#background-home {
+    display: flex;
     background-color: red;
     justify-content: center;
     align-items: center;
@@ -16,5 +24,45 @@
 #content {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+}
+
+.header, .section1, .section2, .section3, .section4-bg, .footer {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-color);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E5E7EB;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    font-size: large;
+    color: #E5E7EB;
+}
+
+.home-button, .menu-button, .contact-button {
+    border: 3px solid #1F2937;
+    padding: 15px 10px;
+}
+
+.home-button:hover, .menu-button:hover, .contact-button:hover {
+    font-weight: bold;
+    border-bottom-color: #E5E7EB;
+    background-color: var(--section1-color);
+    cursor: pointer;
 }
