@@ -1,8 +1,8 @@
-#background-home {
+#background-contact {
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: green;
     justify-content: center;
     align-items: center;
 }
