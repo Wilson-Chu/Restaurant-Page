@@ -8,8 +8,8 @@ const content = document.getElementById("content");
 
 createNav();
 homePage(); // console.log's "I'm home!" - module works!
-menu();
-contact();
+//menu();
+//contact();
 
 function createNav() {
     const navBar = document.createElement('div');
@@ -26,35 +26,35 @@ function createNav() {
     goHome.classList.add('button-nav');
     goHome.id = 'homeButton';
     goHome.textContent = 'Home';
-    /*
+
     goHome.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(goHome);
         homePage();
     });
-*/
+
     const goMenu = document.createElement('div');
     goMenu.classList.add('button-nav');
     goMenu.id = 'menuButton';
     goMenu.textContent = 'Menu';
-    /*
+
     goMenu.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(goMenu);
         menu();
     });
-*/
+
     const goContact = document.createElement('div');
     goContact.classList.add('button-nav');
     goContact.id = 'contactButton';
     goContact.textContent = 'Contact';
-    /*
+
     goContact.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(goContact);
         contact();
     });
-*/
+
     content.appendChild(navBar);
     navBar.appendChild(logo);
     navBar.appendChild(nav);
@@ -63,7 +63,7 @@ function createNav() {
     nav.appendChild(goContact);
     console.log('Where to?');
 }
-/*
+
 function setActiveButton(button) {
     const buttons = document.querySelectorAll('.button-nav');
 
@@ -75,4 +75,3 @@ function setActiveButton(button) {
 
     button.classList.add('active');
 }
-*/
