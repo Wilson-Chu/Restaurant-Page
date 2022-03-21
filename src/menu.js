@@ -6,7 +6,7 @@ export default function menu() {
     const content = document.querySelector('#content');
 
     const background = document.createElement('div');
-    background.id = 'background-menu';
+    background.id = 'backgroundMenu';
     background.innerHTML = 'Menu is Here!';
     content.appendChild(background);
 }

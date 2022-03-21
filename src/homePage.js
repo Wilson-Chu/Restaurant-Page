@@ -7,7 +7,7 @@ export default function homePage() {
     const content = document.querySelector('#content');
 
     const background = document.createElement('div');
-    background.id = 'background-home';
+    background.id = 'backgroundHome';
     background.innerHTML = 'Home Page is Here!';
     content.appendChild(background);
 

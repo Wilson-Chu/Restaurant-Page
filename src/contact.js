@@ -6,7 +6,7 @@ export default function contact() {
     const content = document.querySelector('#content');
 
     const background = document.createElement('div');
-    background.id = 'background-contact';
+    background.id = 'backgroundContact';
     background.innerHTML = 'Contact Us Here!';
     content.appendChild(background);
 }
