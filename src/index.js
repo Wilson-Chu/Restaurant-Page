@@ -6,9 +6,9 @@ console.log('Hello world!');
 const content = document.getElementById("content");
 
 createNav();
-homePage(); // console.log's "I'm home!" - module works!
-menu();
-contact();
+//homePage(); // console.log's "I'm home!" - module works!
+//menu();
+//contact();
 
 function createNav() {
     const navBar = document.createElement('div');
@@ -22,19 +22,34 @@ function createNav() {
     nav.classList.add('nav');
 
     const goHome = document.createElement('div');
-    goHome.classList.add('home-button');
+    goHome.classList.add('button-nav');
     goHome.id = 'homeButton';
     goHome.textContent = 'Home';
+    goHome.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveButton(goHome);
+        homePage();
+    });
 
     const goMenu = document.createElement('div');
-    goMenu.classList.add('menu-button');
+    goMenu.classList.add('button-nav');
     goMenu.id = 'menuButton';
     goMenu.textContent = 'Menu';
+    goMenu.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveButton(goMenu);
+        menu();
+    });
 
     const goContact = document.createElement('div');
-    goContact.classList.add('contact-button');
+    goContact.classList.add('button-nav');
     goContact.id = 'contactButton';
     goContact.textContent = 'Contact';
+    goContact.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActiveButton(goContact);
+        contact();
+    });
 
     content.appendChild(navBar);
     navBar.appendChild(logo);
@@ -43,4 +58,16 @@ function createNav() {
     nav.appendChild(goMenu);
     nav.appendChild(goContact);
     console.log('Where to?');
+}
+
+function setActiveButton(button) {
+    const buttons = document.querySelectorAll('.button-nav');
+
+    buttons.forEach((button) => {
+        if (button !== this) {
+            button.classList.remove('active');
+        }
+    });
+
+    button.classList.add('active');
 }

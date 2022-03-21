@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-#background-home {
+#backgroundHome {
     display: flex;
     background-color: red;
     justify-content: center;
@@ -55,13 +55,13 @@ body {
     text-align: center;
 }
 
-.home-button, .menu-button, .contact-button {
+.button-nav {
     border: 3px solid #1F2937;
     padding: 15px 0;
     width: 90px;
 }
 
-.home-button:hover, .menu-button:hover, .contact-button:hover {
+.button-nav:hover {
     font-weight: bold;
     border-bottom-color: #E5E7EB;
     background-color: var(--section1-color);
