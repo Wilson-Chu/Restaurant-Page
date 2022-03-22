@@ -6,6 +6,8 @@ console.log('Hello world!');
 const content = document.getElementById("content");
 //setActiveButton(document.querySelector('.button-nav'));
 
+
+
 createNav();
 homePage(); // console.log's "I'm home!" - module works!
 //menu();
@@ -61,6 +63,14 @@ function createNav() {
     nav.appendChild(goHome);
     nav.appendChild(goMenu);
     nav.appendChild(goContact);
+
+    /*
+    const main = document.createElement("main");
+    main.classList.add("main");
+    main.id = 'main';
+    content.appendChild(main);
+    */
+
     console.log('Where to?');
 }
 
