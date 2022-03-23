@@ -2,11 +2,7 @@ import hero from './assets/hero.svg';
 import './styles/homePage.css';
 
 export default function homePage() {
-    console.log('I\'m home!');
-
-    /*
-    const main = document.getElementById("main");
-    main.textContent = "";*/
+    console.log("I'm home!");
 
     const content = document.querySelector('#content');
 

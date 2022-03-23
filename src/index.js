@@ -10,8 +10,6 @@ const content = document.getElementById("content");
 
 createNav();
 homePage(); // console.log's "I'm home!" - module works!
-//menu();
-//contact();
 
 function createNav() {
     const navBar = document.createElement('div');
@@ -19,54 +17,54 @@ function createNav() {
 
     const logo = document.createElement('div');
     logo.classList.add('logo');
-    logo.textContent = 'Tony\'s Pizza';
+    logo.textContent = "Tony's Pizza";
 
     const nav = document.createElement('div');
     nav.classList.add('nav');
 
-    const goHome = document.createElement('div');
-    goHome.classList.add('button-nav');
-    goHome.id = 'homeButton';
-    goHome.textContent = 'Home';
+    const homeBtn = document.createElement('div');
+    homeBtn.classList.add('button-nav');
+    homeBtn.id = 'homeButton';
+    homeBtn.textContent = 'Home';
 
-    goHome.addEventListener('click', (e) => {
+    homeBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
-        setActiveButton(goHome);
+        setActiveButton(homeBtn);
         homePage();
     });
 
-    const goMenu = document.createElement('div');
-    goMenu.classList.add('button-nav');
-    goMenu.id = 'menuButton';
-    goMenu.textContent = 'Menu';
+    const menuBtn = document.createElement('div');
+    menuBtn.classList.add('button-nav');
+    menuBtn.id = 'menuButton';
+    menuBtn.textContent = 'Menu';
 
-    goMenu.addEventListener('click', (e) => {
+    menuBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
-        setActiveButton(goMenu);
+        setActiveButton(menuBtn);
         menu();
     });
 
-    const goContact = document.createElement('div');
-    goContact.classList.add('button-nav');
-    goContact.id = 'contactButton';
-    goContact.textContent = 'Contact';
+    const contactBtn = document.createElement('div');
+    contactBtn.classList.add('button-nav');
+    contactBtn.id = 'contactButton';
+    contactBtn.textContent = 'Contact';
 
-    goContact.addEventListener('click', (e) => {
+    contactBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
-        setActiveButton(goContact);
+        setActiveButton(contactBtn);
         contact();
     });
 
     content.appendChild(navBar);
     navBar.appendChild(logo);
     navBar.appendChild(nav);
-    nav.appendChild(goHome);
-    nav.appendChild(goMenu);
-    nav.appendChild(goContact);
+    nav.appendChild(homeBtn);
+    nav.appendChild(menuBtn);
+    nav.appendChild(contactBtn);
 
     /*
-    const main = document.createElement("main");
-    main.classList.add("main");
+    const main = document.createElement('div');
+    main.classList.add('main');
     main.id = 'main';
     content.appendChild(main);
     */
