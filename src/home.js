@@ -1,7 +1,7 @@
 import hero from './assets/hero.svg';
 import './styles/homePage.css';
 
-export default function homePage() {
+export default function loadHome() {
     console.log("I'm home!");
 
     const content = document.querySelector('#content');

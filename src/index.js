@@ -1,6 +1,6 @@
-import homePage from './homePage.js';
-import menu from './menu.js';
-import contact from './contact.js';
+import loadHome from './home.js';
+import loadMenu from './menu.js';
+import loadContact from './contact.js';
 
 console.log('Hello world!');
 const content = document.getElementById("content");
@@ -9,7 +9,7 @@ const content = document.getElementById("content");
 
 
 createNav();
-homePage(); // console.log's "I'm home!" - module works!
+loadHome(); // console.log's "I'm home!" - module works!
 
 function createNav() {
     const navBar = document.createElement('div');
@@ -30,7 +30,7 @@ function createNav() {
     homeBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(homeBtn);
-        homePage();
+        loadHome();
     });
 
     const menuBtn = document.createElement('div');
@@ -41,7 +41,7 @@ function createNav() {
     menuBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(menuBtn);
-        menu();
+        loadMenu();
     });
 
     const contactBtn = document.createElement('div');
@@ -52,7 +52,7 @@ function createNav() {
     contactBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(contactBtn);
-        contact();
+        loadContact();
     });
 
     content.appendChild(navBar);

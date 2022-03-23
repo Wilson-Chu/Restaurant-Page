@@ -1,6 +1,6 @@
 import './styles/contact.css';
 
-export default function contact() {
+export default function loadContact() {
     console.log('Are you talking to me?');
 
     const content = document.querySelector('#content');

@@ -1,6 +1,6 @@
 import './styles/menu.css';
 
-export default function menu() {
+export default function loadMenu() {
     console.log('Look at the menu!');
 
     const content = document.querySelector('#content');
