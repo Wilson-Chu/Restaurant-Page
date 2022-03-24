@@ -1,4 +1,4 @@
-import './styles/contact.css';
+//import './styles/contact.css';
 
 export default function loadContact() {
     const contactPage = document.getElementById("main");
