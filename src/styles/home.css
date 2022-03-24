@@ -61,7 +61,7 @@ body {
     width: 90px;
 }
 
-.button-nav:hover {
+.button-nav:hover, .active {
     font-weight: bold;
     border-bottom-color: #E5E7EB;
     background-color: var(--section1-color);
