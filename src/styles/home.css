@@ -10,15 +10,18 @@
 
 #backgroundHome {
     display: flex;
-    background-color: red;
+    background-color: var(--section1-color);
     justify-content: center;
     align-items: center;
+    height: 93vh;
+    color: bisque;
 }
 
 #hero {
     width: 80vw;
     height: 80vh;
     align-self: center;
+    justify-self: center;
 }
 
 #content {
