@@ -2,14 +2,18 @@ import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
 
-console.log('Hello world!');
 const content = document.getElementById("content");
-//setActiveButton(document.querySelector('.button-nav'));
-
-
 
 createNav();
-loadHome(); // console.log's "I'm home!" - module works!
+
+const main = document.createElement('div');
+main.classList.add('main');
+main.id = 'main';
+content.appendChild(main);
+
+setActiveButton(document.querySelector('.button-nav'));
+
+loadHome();
 
 function createNav() {
     const navBar = document.createElement('div');
@@ -58,13 +62,6 @@ function createNav() {
     nav.appendChild(homeBtn);
     nav.appendChild(menuBtn);
     nav.appendChild(contactBtn);
-
-    /*
-    const main = document.createElement('div');
-    main.classList.add('main');
-    main.id = 'main';
-    content.appendChild(main);
-    */
 
     console.log('Where to?');
 }

@@ -1,12 +1,11 @@
 import './styles/contact.css';
 
 export default function loadContact() {
-    console.log('Are you talking to me?');
-
-    const content = document.querySelector('#content');
+    const contactPage = document.getElementById("main");
+    contactPage.textContent = "";
 
     const background = document.createElement('div');
     background.id = 'backgroundContact';
     background.innerHTML = 'Contact Us Here!';
-    content.appendChild(background);
+    contactPage.appendChild(background);
 }

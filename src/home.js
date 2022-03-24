@@ -2,18 +2,17 @@ import hero from './assets/hero.svg';
 import './styles/homePage.css';
 
 export default function loadHome() {
-    console.log("I'm home!");
-
-    const content = document.querySelector('#content');
+    const homePage = document.getElementById("main");
+    homePage.textContent = "";
 
     const background = document.createElement('div');
     background.id = 'backgroundHome';
     background.innerHTML = 'Home Page is Here!';
-    content.appendChild(background);
+    homePage.appendChild(background);
 
     const heroImg = document.createElement('img');
     heroImg.id = 'hero';
     heroImg.src = hero;
     heroImg.alt = 'Pizza';
-    content.appendChild(heroImg);
+    homePage.appendChild(heroImg);
 }
