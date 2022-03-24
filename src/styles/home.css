@@ -3,7 +3,7 @@
     --section1-color: #2a384b;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
 }
