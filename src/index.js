@@ -12,7 +12,6 @@ main.id = 'main';
 content.appendChild(main);
 
 setActiveButton(document.querySelector('.button-nav'));
-
 loadHome();
 
 function createNav() {
@@ -62,8 +61,6 @@ function createNav() {
     nav.appendChild(homeBtn);
     nav.appendChild(menuBtn);
     nav.appendChild(contactBtn);
-
-    console.log('Where to?');
 }
 
 function setActiveButton(button) {

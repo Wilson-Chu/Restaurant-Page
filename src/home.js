@@ -1,5 +1,5 @@
 import hero from './assets/hero.svg';
-import './styles/homePage.css';
+import './styles/home.css';
 
 export default function loadHome() {
     const homePage = document.getElementById("main");
