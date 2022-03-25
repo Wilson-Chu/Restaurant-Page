@@ -3,6 +3,6 @@
     background-color: var(--section1-color);
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: calc(100vh - 62px);
     color: bisque;
 }

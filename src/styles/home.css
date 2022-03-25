@@ -14,7 +14,7 @@
     background-color: var(--section1-color);
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: calc(100vh - 62px);
     color: bisque;
 }
 
@@ -60,7 +60,7 @@
 .button-nav {
     border: 3px solid #1F2937;
     padding: 15px 0;
-    width: 95px;
+    width: 100px;
     transition: all;
 }
 
