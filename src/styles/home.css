@@ -4,6 +4,7 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +43,7 @@
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     color: #E5E7EB;
     padding-top: 15px;
@@ -50,8 +51,6 @@
 }
 
 .nav {
-    margin: 0;
-    padding: 0;
     display: flex;
     font-size: large;
     color: #E5E7EB;
@@ -61,7 +60,8 @@
 .button-nav {
     border: 3px solid #1F2937;
     padding: 15px 0;
-    width: 90px;
+    width: 95px;
+    transition: all;
 }
 
 .button-nav:hover, .active {
@@ -69,4 +69,5 @@
     border-bottom-color: #E5E7EB;
     background-color: var(--section1-color);
     cursor: pointer;
+    transition: border-bottom-color 0.25s;
 }
