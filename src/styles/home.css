@@ -29,9 +29,10 @@
     position: relative;
 }
 
-h1 {
+#textBox {
     z-index: 1;
     position: absolute;
+    text-align: center;
 }
 
 #content {

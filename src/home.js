@@ -15,11 +15,14 @@ export default function loadHome() {
     heroImg.alt = 'Pizza';
     background.appendChild(heroImg);
 
+    const textBox = document.createElement('div');
+    textBox.id = 'textBox';
+    background.appendChild(textBox);
     const h1 = document.createElement('h1');
     h1.textContent = "Welcome to Will's Pizza!";
-    background.appendChild(h1);
+    textBox.appendChild(h1);
 
     const h2 = document.createElement('h2');
-    h2.textContent = "Serving Toronto since 1888!";
-    h1.appendChild(h2);
+    h2.textContent = "Serving Toronto since 1867!";
+    textBox.appendChild(h2);
 }
