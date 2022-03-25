@@ -1,9 +1,10 @@
 :root {
     --header-color: #1F2937;
     --section1-color: #2a384b;
+    --side-padding: 80px;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@
     background-color: var(--section1-color);
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 64px);
     color: bisque;
 }
 
@@ -31,8 +32,8 @@
 }
 
 .header, .section1, .section2, .section3, .section4-bg, .footer {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
 }
 
 .header {
@@ -43,7 +44,7 @@
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     color: #E5E7EB;
     padding-top: 15px;
@@ -52,9 +53,10 @@
 
 .nav {
     display: flex;
-    font-size: large;
+    font-size: 18px;
     color: #E5E7EB;
     text-align: center;
+    align-self: end;
 }
 
 .button-nav {
@@ -70,4 +72,14 @@
     background-color: var(--section1-color);
     cursor: pointer;
     transition: border-bottom-color 0.25s;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        align-self: center;
+    }
 }
