@@ -20,7 +20,7 @@ function createNav() {
 
     const logo = document.createElement('div');
     logo.classList.add('logo');
-    logo.textContent = "Tony's Pizza";
+    logo.textContent = "Will's Pizza";
 
     const nav = document.createElement('div');
     nav.classList.add('nav');
