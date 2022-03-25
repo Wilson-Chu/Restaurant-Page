@@ -18,11 +18,14 @@ export default function loadHome() {
     const textBox = document.createElement('div');
     textBox.id = 'textBox';
     background.appendChild(textBox);
+
     const h1 = document.createElement('h1');
     h1.textContent = "Welcome to Will's Pizza!";
     textBox.appendChild(h1);
-
     const h2 = document.createElement('h2');
     h2.textContent = "Serving Toronto since 1867!";
     textBox.appendChild(h2);
+    const p = document.createElement('p');
+    p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    background.appendChild(p);
 }
