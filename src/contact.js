@@ -5,7 +5,6 @@ export default function loadContact() {
     contactPage.textContent = "";
 
     const background = document.createElement('div');
-    background.id = 'backgroundContact';
-    background.innerHTML = 'Contact Us Here!';
+    background.id = 'background';
     contactPage.appendChild(background);
 }

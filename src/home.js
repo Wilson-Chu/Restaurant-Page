@@ -6,13 +6,12 @@ export default function loadHome() {
     homePage.textContent = "";
 
     const background = document.createElement('div');
-    background.id = 'backgroundHome';
-    background.innerHTML = 'Home Page is Here!';
+    background.id = 'background';
     homePage.appendChild(background);
 
-    const heroImg = document.createElement('img');
-    heroImg.id = 'hero';
-    heroImg.src = hero;
-    heroImg.alt = 'Pizza';
-    homePage.appendChild(heroImg);
+    // const heroImg = document.createElement('img');
+    // heroImg.id = 'hero';
+    // heroImg.src = hero;
+    // heroImg.alt = 'Pizza';
+    // homePage.appendChild(heroImg);
 }

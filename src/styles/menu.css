@@ -1,8 +1,8 @@
-#backgroundMenu {
+/* #backgroundMenu {
     display: flex;
     background-color: var(--section1-color);
     justify-content: center;
     align-items: center;
     height: calc(100vh - 64px);
     color: bisque;
-}
+} */

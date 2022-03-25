@@ -5,7 +5,6 @@ export default function loadMenu() {
     menuPage.textContent = "";
 
     const background = document.createElement('div');
-    background.id = 'backgroundMenu';
-    background.innerHTML = 'Menu is Here!';
+    background.id = 'background';
     menuPage.appendChild(background);
 }
