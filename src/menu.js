@@ -11,4 +11,9 @@ export default function loadMenu() {
     const background = document.createElement('div');
     background.id = 'background';
     menuPage.appendChild(background);
+
+    const menuTitle = document.createElement('div');
+    menuTitle.id = 'menu-title';
+    menuTitle.textContent = 'Menu';
+    background.appendChild(menuTitle);
 }
