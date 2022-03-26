@@ -91,14 +91,18 @@ p {
     border: 3px solid #1F2937;
     padding: 15px 0;
     width: 100px;
+    border-bottom-color: var(--section1-color);
     transition: all;
 }
 
 .button-nav:hover, .active {
     font-weight: bold;
-    border-bottom-color: #E5E7EB;
     background-color: var(--section1-color);
     cursor: pointer;
+}
+
+.active {
+    border-bottom-color: #E5E7EB;
     transition: border-bottom-color 0.25s;
 }
 
