@@ -8,12 +8,11 @@
 
 .menu-items {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
-    /* align-items: center; */
     flex-wrap: wrap;
     border: 1px dashed bisque;
-    padding: 30px;
+    padding: 25px;
     margin: 40px 80px;
 }
 
@@ -41,5 +40,4 @@
     color: blanchedalmond;
     font-size: 16px;
     text-align: center;
-    text-align-last: center;
 }
