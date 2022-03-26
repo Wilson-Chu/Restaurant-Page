@@ -27,7 +27,7 @@ function createNav() {
 
     const homeBtn = document.createElement('div');
     homeBtn.classList.add('button-nav');
-    homeBtn.id = 'homeButton';
+    homeBtn.id = 'home-btn';
     homeBtn.textContent = 'Home';
     homeBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
@@ -37,7 +37,7 @@ function createNav() {
 
     const menuBtn = document.createElement('div');
     menuBtn.classList.add('button-nav');
-    menuBtn.id = 'menuButton';
+    menuBtn.id = 'menu-btn';
     menuBtn.textContent = 'Menu';
     menuBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
@@ -47,7 +47,7 @@ function createNav() {
 
     const contactBtn = document.createElement('div');
     contactBtn.classList.add('button-nav');
-    contactBtn.id = 'contactButton';
+    contactBtn.id = 'contact-btn';
     contactBtn.textContent = 'Contact';
     contactBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;

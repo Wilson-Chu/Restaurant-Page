@@ -34,12 +34,12 @@
     flex-direction: column;
 }
 
-#textBox {
+#text-box-home {
     font-family: cursive;
     z-index: 2;
     position: absolute;
     text-align: center;
-    margin-top: -500px;
+    margin-top: -450px;
 }
 
 h1 {
@@ -59,7 +59,7 @@ p {
     margin-bottom: -200px;
 }
 
-.header, .section1, .section2, .section3, .section4-bg, .footer {
+.header, #text-box-home, .menu, .contact {
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
 }

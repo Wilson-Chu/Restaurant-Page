@@ -16,7 +16,7 @@ export default function loadHome() {
     background.appendChild(heroImg);
 
     const textBox = document.createElement('div');
-    textBox.id = 'textBox';
+    textBox.id = 'text-box-home';
     background.appendChild(textBox);
 
     const h1 = document.createElement('h1');
