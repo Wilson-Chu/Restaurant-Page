@@ -14,7 +14,8 @@ function createMenuCard(picture, name, label) {
     imgPizza.alt = name;
     card.appendChild(imgPizza);
 
-    const cardLabel = document.createElement('p');
+    const cardLabel = document.createElement('div');
+    cardLabel.classList.add('menu-label');
     cardLabel.textContent = label;
     card.appendChild(cardLabel);
 
