@@ -14,3 +14,29 @@
     font-family: cursive;
     color: bisque;
 }
+
+.menu-items {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    width: 200px;
+}
+
+.mini {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 5px solid #3882F6;
+}
+
+.menu-card p {
+    text-align: justify;
+    text-align-last: center;
+    margin: 0;
+}

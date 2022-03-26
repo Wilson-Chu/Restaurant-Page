@@ -39,33 +39,16 @@ export default function loadMenu() {
     menuItems.classList.add('menu-items');
     background.appendChild(menuItems);
 
-    // Start of Menu Card 1
-    const card1 = document.createElement('div');
-    card1.classList.add('menu-card');
-    menuItems.appendChild(card1);
-
-    const imgPizza1 = document.createElement('img');
-    imgPizza1.classList.add('mini');
-    imgPizza1.src = pizza1;
-    imgPizza1.alt = 'Classic Margherita Pizza';
-    card1.appendChild(imgPizza1);
-
-    const card1Label = document.createElement('p');
-    card1Label.textContent = 'Classic Margherita Pizza - $8';
-    card1.appendChild(card1Label);
-
-    // Start of Menu Card 2
+    menuItems.appendChild(
+        createMenuCard(pizza1, 'Classic Margherita Pizza', 'Classic Margherita Pizza - $8')
+    );
     menuItems.appendChild(
         createMenuCard(pizza2, 'Pepperoni Pizza', 'Pepperoni Pizza - $10')
     );
-
-    /* Start of Menu Cards 3/4
     menuItems.appendChild(
         createMenuCard(pizza3, 'Individual Pizza Slices', 'Pizza Slice - $3')
     );
-
     menuItems.appendChild(
         createMenuCard(pizza4, 'Cheese Pizza', 'Cheese Pizza - $9')
     );
-    */
 }
