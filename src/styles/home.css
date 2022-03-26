@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
 #background {
     display: flex;
     background-color: var(--section1-color);
@@ -27,11 +32,6 @@
     opacity: 10%;
     z-index: none;
     position: relative;
-}
-
-#content {
-    display: flex;
-    flex-direction: column;
 }
 
 #text-box-home {
@@ -73,6 +73,7 @@ p {
 
 .logo {
     font-size: 28px;
+    font-style: italic;
     font-weight: bold;
     color: #E5E7EB;
     padding-top: 15px;
