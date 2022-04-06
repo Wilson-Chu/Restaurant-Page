@@ -1,15 +1,24 @@
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #menu-title {
     font-size: 48px;
     font-weight: bold;
     font-style: italic;
     font-family: cursive;
     color: bisque;
+    text-align: center;
 }
 
 .menu-items {
     display: flex;
     gap: 25px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     border: 1px dashed bisque;
     padding: 25px;
@@ -38,6 +47,13 @@
 
 .menu-label {
     color: blanchedalmond;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    #menu-title {
+        position: absolute;
+        margin-top: 500px;
+    }
 }

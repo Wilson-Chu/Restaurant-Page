@@ -30,15 +30,19 @@ export default function loadMenu() {
     background.id = 'background';
     menuPage.appendChild(background);
 
+    const menuContainer = document.createElement('div');
+    menuContainer.id = 'menu-container';
+    background.appendChild(menuContainer);
+
     const menuTitle = document.createElement('div');
     menuTitle.id = 'menu-title';
     menuTitle.textContent = 'Menu';
-    background.appendChild(menuTitle);
+    menuContainer.appendChild(menuTitle);
 
     /* Container of all menu cards */
     const menuItems = document.createElement('div');
     menuItems.classList.add('menu-items');
-    background.appendChild(menuItems);
+    menuTitle.appendChild(menuItems);
 
     menuItems.appendChild(
         createMenuCard(pizza1, 'Classic Margherita Pizza', 'Classic Margherita Pizza - $8')
