@@ -156,7 +156,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadContact)\n/* harmony export */ });\n/* harmony import */ var _styles_contact_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/contact.css */ \"./src/styles/contact.css\");\n\n\nfunction loadContact() {\n    const contactPage = document.getElementById(\"main\");\n    contactPage.textContent = \"\";\n\n    const background = document.createElement('div');\n    background.id = 'background';\n    contactPage.appendChild(background);\n\n    const contactContainer = document.createElement('div');\n    contactContainer.id = 'contact-container';\n    background.appendChild(contactContainer);\n\n    const contactTitle = document.createElement('div');\n    contactTitle.id = 'contact-title';\n    contactTitle.textContent = 'Contact Us';\n    contactContainer.appendChild(contactTitle);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadContact)\n/* harmony export */ });\n/* harmony import */ var _assets_map_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/map.png */ \"./src/assets/map.png\");\n/* harmony import */ var _styles_contact_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/contact.css */ \"./src/styles/contact.css\");\n\n\n\nfunction loadContact() {\n    const contactPage = document.getElementById(\"main\");\n    contactPage.textContent = \"\";\n\n    const background = document.createElement('div');\n    background.id = 'background';\n    contactPage.appendChild(background);\n\n    const contactTitle = document.createElement('div');\n    contactTitle.id = 'contact-title';\n    contactTitle.textContent = 'Contact Us';\n    background.appendChild(contactTitle);\n\n    const contactContainer = document.createElement('div');\n    contactContainer.id = 'contact-container';\n    background.appendChild(contactContainer);\n\n    const phoneNum = document.createElement('div');\n    phoneNum.classList.add('phone-num');\n    phoneNum.textContent = '123-456-7890';\n    contactContainer.appendChild(phoneNum);\n\n    const address = document.createElement('div');\n    address.classList.add('address');\n    address.textContent = '123 Main St, Toronto, ON, Canada  A1B2C3';\n    contactContainer.appendChild(address);\n\n    const imgLocation = document.createElement('img');\n    imgLocation.classList.add('location');\n    imgLocation.src = _assets_map_png__WEBPACK_IMPORTED_MODULE_0__;\n    imgLocation.alt = 'Toronto';\n    contactContainer.appendChild(imgLocation);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
 
 /***/ }),
 
@@ -197,6 +197,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"df5d11799ec3438f88f0.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/hero.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/map.png":
+/*!****************************!*\
+  !*** ./src/assets/map.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"89912999edcecf27279c.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/map.png?");
 
 /***/ }),
 
