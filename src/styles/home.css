@@ -1,132 +1,132 @@
 :root {
-    --header-color: #1F2937;
-    --header-text-color: #E5E7EB;
-    --section1-color: #2a384b;
-    --side-padding: 80px;
+  --header-color: #1f2937;
+  --header-text-color: #e5e7eb;
+  --section1-color: #2a384b;
+  --side-padding: 80px;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #background {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--section1-color);
-    /* background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section1-color);
+  /* background-attachment: fixed;
     background-size: cover; */
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 64px);
-    color: orangered;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+  color: orangered;
 }
 
 #hero {
-    width: 90vw;
-    height: 90vh;
-    align-self: center;
-    justify-self: center;
-    opacity: 10%;
-    z-index: none;
-    position: relative;
+  width: 90vw;
+  height: 90vh;
+  align-self: center;
+  justify-self: center;
+  opacity: 10%;
+  z-index: none;
+  position: relative;
 }
 
 #text-box-home {
-    font-family: cursive;
-    z-index: 2;
-    position: absolute;
-    text-align: center;
-    margin-top: -450px;
+  font-family: cursive;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  margin-top: -450px;
 }
 
 h1 {
-    font-size: 55px;
+  font-size: 55px;
 }
 
 h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 p {
-    font-size: 20px;
-    z-index: 1;
-    position: absolute;
-    text-align: justify;
-    max-width: 75%;
-    margin-bottom: -200px;
+  font-size: 20px;
+  z-index: 1;
+  position: absolute;
+  text-align: justify;
+  max-width: 75%;
+  margin-bottom: -200px;
 }
 
 .header,
 #text-box-home,
 .menu,
 .contact {
-    padding-left: var(--side-padding);
-    padding-right: var(--side-padding);
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
 }
 
 .logo {
-    font-size: 28px;
-    font-style: italic;
-    font-weight: bold;
-    color: var(--header-text-color);
-    padding-top: 15px;
-    padding-bottom: 15px;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--header-text-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .nav {
-    display: flex;
-    font-size: 18px;
-    color: var(--header-text-color);
-    text-align: center;
-    align-self: end;
+  display: flex;
+  font-size: 18px;
+  color: var(--header-text-color);
+  text-align: center;
+  align-self: end;
 }
 
 .button-nav {
-    border: 3px solid #1F2937;
-    padding: 15px 0;
-    width: 100px;
-    border-bottom-color: var(--section1-color);
-    transition: all;
+  border: 3px solid #1f2937;
+  padding: 15px 0;
+  width: 100px;
+  border-bottom-color: var(--section1-color);
+  transition: all;
 }
 
 .button-nav:hover,
 .active {
-    font-weight: bold;
-    background-color: var(--section1-color);
-    cursor: pointer;
+  font-weight: bold;
+  background-color: var(--section1-color);
+  cursor: pointer;
 }
 
 .active {
-    border-bottom-color: var(--header-text-color);
-    transition: border-bottom-color 0.25s;
+  border-bottom-color: var(--header-text-color);
+  transition: border-bottom-color 0.25s;
 }
 
 @media (max-width: 700px) {
-    #background {
-        height: calc(100vh - 64px - 58px);
-    }
+  #background {
+    height: calc(100vh - 64px - 58px);
+  }
 
-    .header {
-        flex-direction: column;
-    }
+  .header {
+    flex-direction: column;
+  }
 
-    .nav {
-        align-self: center;
-    }
+  .nav {
+    align-self: center;
+  }
 }

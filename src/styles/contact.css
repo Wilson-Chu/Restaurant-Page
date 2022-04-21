@@ -1,32 +1,32 @@
 #contact-title {
-    margin-top: -10%;
-    font-size: 48px;
-    font-family: cursive;
-    padding-bottom: 20px;
-    color: var(--header-text-color);
-    text-decoration: underline;
+  margin-top: -10%;
+  font-size: 48px;
+  font-family: cursive;
+  padding-bottom: 20px;
+  color: var(--header-text-color);
+  text-decoration: underline;
 }
 
 #contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    color: bisque;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  color: bisque;
+  font-weight: bold;
 }
 
 .phone-num {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 .address {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .location {
-    width: 100%;
-    height: auto;
-    max-width: 80vw;
+  width: 100%;
+  height: auto;
+  max-width: 80vw;
 }
