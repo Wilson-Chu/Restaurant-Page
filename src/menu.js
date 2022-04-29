@@ -45,11 +45,7 @@ export default function loadMenu() {
   menuTitle.appendChild(menuItems);
 
   menuItems.appendChild(
-    createMenuCard(
-      pizza1,
-      "Classic Margherita Pizza",
-      "Classic Margherita Pizza - $8"
-    )
+    createMenuCard(pizza1, "Classic Margherita Pizza", "Classic Margherita Pizza - $8")
   );
   menuItems.appendChild(
     createMenuCard(pizza2, "Pepperoni Pizza", "Pepperoni Pizza - $10")
